@@ -64,14 +64,36 @@
               <img class="project-image cubo-image" src="images/rubik.svg" width="225" alt="Proyecto Objects">
             </figure>
           </article>
+
+          <article class="project project-hidden">
+            <div class="project-details">
+              <h3 class="project-title">PROJECT</h3>
+              <p class="project-url"><small><strong>Puedes verlo en:</strong> Pronto en la web</small></p>
+              <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur possimus sed dicta sunt earum, non, accusamus dolores eligendi incidunt libero, ea omnis sequi unde illum ipsa? Esse minima odit cum.</p>
+            </div>
+            <figure class="project-imageContainer">
+              <img class="project-image cubo-image" src="images/rubik.svg" width="225" alt="Proyecto Objects">
+            </figure>
+          </article>
+
+          <article class="project project-hidden">
+            <div class="project-details">
+              <h3 class="project-title">PROJECT</h3>
+              <p class="project-url"><small><strong>Puedes verlo en:</strong> Pronto en la web</small></p>
+              <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur possimus sed dicta sunt earum, non, accusamus dolores eligendi incidunt libero, ea omnis sequi unde illum ipsa? Esse minima odit cum.</p>
+            </div>
+            <figure class="project-imageContainer">
+              <img class="project-image cubo-image" src="images/rubik.svg" width="225" alt="Proyecto Objects">
+            </figure>
+          </article>
         </div>
 
         <div class="container">
-          <a class="projects-mas" href="#">Ver Más</a>
+          <span class="projects-mas" id="projects-mas" onclick="moreAndLessProject()">Ver Más</span>
         </div>
       </section>
       <div class="container">
-        <h2 class="event-list-title">Más sobre mi experiencia</h2>
+        <h2 class="event-list-title">Más sobre mí</h2>
       </div>
       <section id="eventos" class="event-list">
         <div class="container">
@@ -82,7 +104,8 @@
             <div class="event-detail">
               <h3 class="event-title">Música y pasatiempos...</h3>
               <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a class="event-url" href="#">Ver Más</a>
+              <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
+              <spas class="event-url" onclick="moreAndLessEvent(0)">Ver Más</span>
             </div>
           </article>
 
@@ -93,7 +116,9 @@
             <div class="event-detail">
               <h3 class="event-title">Mi vida personal...</h3>
               <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a class="event-url" href="#">Ver Más</a>
+              <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
+
+              <span class="event-url" onclick="moreAndLessEvent(1)">Ver Más</span>
             </div>
           </article>
 
@@ -104,7 +129,8 @@
             <div class="event-detail">
               <h3 class="event-title">Estudios...</h3>
               <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a class="event-url" href="#">Ver Más</a>
+              <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
+              <span class="event-url"onclick="moreAndLessEvent(2)" >Ver Más</span>
             </div>
           </article>
         </div>
@@ -133,5 +159,6 @@
           </div>
         </div>
       </footer>
+      <script src="home.js"></script>
   </body>
 </html>
