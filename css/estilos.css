@@ -126,7 +126,8 @@ font-family: Braxton;
 
 .portafolio{
   background-color: #eaeaea;
-  padding: 20px;
+  padding:  20px;
+  padding-bottom: 50px;
 }
 
 .project{
@@ -213,8 +214,8 @@ font-family: Braxton;
   text-align: left;
 }
 
-.event-url{
-  color: #056fff;
+.event-url, .projects-mas{
+  color: #0c3638;
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
@@ -222,14 +223,14 @@ font-family: Braxton;
 }
 
 .event-url:hover{
-  background-color: #056fff;
+  background-color: #0c3638;
   color: white;
-  border-color: #056fff;
+  border-color: #0c3638;
   transition: all 0.3s;
 }
 
 .contact{
-  background-color: #2cb4ba;
+  background-color: #0c3638;
   color: white;
   height: 150px;
   display: flex;
@@ -282,6 +283,13 @@ font-family: Braxton;
   background-size: 50px 50px;
 }
 
+.social-link:hover{
+
+filter: blur(1px);
+
+transform: scale(1.1);
+}
+
 .social-link.twitter{
   background-image: url('../images/twitter.svg');
 }
@@ -322,4 +330,15 @@ font-family: Braxton;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+
+.projects-mas{
+  margin-left: 444px;
+}
+
+.projects-mas:hover{
+  background-color: #0c3638;
+  color: white;
+  border-color: #0c3638;
+  transition: all 0.3s;
 }
