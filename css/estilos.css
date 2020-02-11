@@ -120,6 +120,12 @@ ol, ul{
   padding-top: 42px;
 }
 
+.autor-frase{
+  font-size: 20px;
+  margin-left: 358px;
+  color: #299970;
+}
+
 .hero img{
   object-fit: cover;
   border-radius: 147px;
@@ -359,7 +365,7 @@ font-family: teko;
   margin-top: 10px;
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1vw;
+  font-size: 14px;
 }
 
 .form-email button:hover{
