@@ -2,13 +2,15 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Juan David - Desarrollador</title>
+    <title>Juan David | Desarrollador</title>
     <link rel="icon" type="image/png" href="images/logoJuanD.png">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" 
+          rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport">
   </head>
-  <body>
+  <body ondragstart="return false">
+      <!-- NAVBAR -->
       <header class="header">
         <div class="container">
           <figure class="logo">
@@ -26,65 +28,231 @@
               <li>
                 <a class="link" href="#contacto">Trabajemos juntos</a>
               </li>
+              <li>
+                <a class="link" href="#">Tips</a>
+              </li>
             </ul>
           </nav>
         </div>
       </header>
-
+      <!-- FRASE E IMAGEN -->
       <section class="hero">
         <div class="container">
-          <h1>
-            “Si escuchas una <span>voz</span> en tu interior que te dice que <span>no puedes</span> pintar, <span>¡Pinta!</span> y esa voz se callará” <br> <span class="autor-frase">~ Van Gogh</span>
+          <h1 class="fraseInicial">
+            “Si escuchas una <span>voz</span> en tu interior que te dice que 
+            <span>no puedes</span> pintar, 
+            <span>¡Pinta!</span> y esa voz se callará” <br> <span class="autor-frase">~ Van Gogh</span>
           </h1>
           <img src="images/heroJD.jpg" alt="imagen principal del sitio">
         </div>
       </section>
-
+      <!-- PORTAFOLIO -->
       <section id="portafolio" class="portafolio">
         <div class="container">
-          <h2>Portafolio (proyectos destacados)</h2>
+          <h2>Portafolio (proyectos de código abierto)</h2>
           <article class="project">
+            <figure class="project-imageContainer">
+              <img class="project-image" width="227" src="images/mappbus.png" alt="Proyecto MappBus">
+            </figure>
             <div class="project-details">
               <h3 class="project-title">MappBus</h3>
-              <p class="project-url"><small><strong>Puedes verlo en:</strong> Pronto en la web</small></p>
-              <p class="project-description">Ofrecer a los usuarios rápida información, comodidad y orientación a la hora de utilizar el transporte público de buses. el acceso a lugares en específico de forma efectiva de acuerdo con la necesidad del cliente.</p>
+              <p class="project-url">
+                <small>
+                  <strong>Puedes verlo en:</strong> 
+                  Pronto en la web
+                </small>
+              </p>
+              <p class="project-url">
+                <small>
+                  <strong>Código en:</strong>
+                  <a href="https://github.com/jdhl27/MappBus" target="_blank"> MappBus/Codigo</a>
+                </small>
+              </p>
+              <p class="project-description">
+                Ofrecer a los usuarios rápida información, comodidad y orientación a la hora de utilizar 
+                el transporte público de buses. el acceso a lugares en específico de forma efectiva de acuerdo
+                con la necesidad del cliente.
+              </p>
+              <p class="project-code">
+                <img src="images/js.png" alt="JS">
+              </p>
             </div>
-            <figure class="project-imageContainer">
-              <img class="project-image" width="172" src="images/mappbus.png" alt="Proyecto MappBus">
-            </figure>
           </article>
 
           <article class="project">
-            <div class="project-details">
-              <h3 class="project-title">Objects</h3>
-              <p class="project-url"><small><strong>Puedes verlo en:</strong> Pronto en la web</small></p>
-              <p class="project-description">¿Perdiste algo en la Universidad? La comunidad de Objects te ayuda a recuperarlo. Objects es una red social que permite generar publicaciones de objetos perdidos dentro de las instituciones.</p>
-            </div>
             <figure class="project-imageContainer">
-              <img class="project-image cubo-image" width="172" src="images/perdido.png" alt="Proyecto Objects">
+              <img class="project-image" width="227" src="images/simon.svg" alt="Proyecto Simón">
             </figure>
+            <div class="project-details">
+              <h3 class="project-title">Juego Simón</h3>
+              <p class="project-url">
+                <small>
+                  <strong>Puedes verlo en:</strong> 
+                  <a href="https://jdhl27.github.io/simon" target="_blank"> www.simon.com</a>
+                </small>
+              </p>
+              <p class="project-url">
+                <small>
+                  <strong>Código en:</strong>
+                  <a href="https://github.com/jdhl27/simon" target="_blank"> Simon/Codigo</a>
+                </small>
+              </p>
+              <p class="project-description">
+                El juego de forma aleatoria va iluminando los cuadrantes de colores, 
+                y a la vez que se ilumina cada cuadrante emite un sonido propio. 
+                Después de esperar, el usuario debe ir introduciendo la secuencia mostrada en el
+                 orden correcto, ayudándose de su memoria visual y sonora.
+              </p>
+              <p class="project-code">
+                <img src="images/js.png" alt="JS">
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <figure class="project-imageContainer">
+              <img class="project-image" width="227" src="images/uniforme.png" alt="Proyecto Torneo">
+            </figure>
+            <div class="project-details">
+              <h3 class="project-title">Torneo</h3>
+              <p class="project-url">
+                <small>
+                  <strong>Puedes verlo en:</strong> 
+                   Sitio de escritorio
+                </small>
+              </p>
+              <p class="project-url">
+                <small>
+                  <strong>Código en:</strong>
+                  <a href="https://github.com/jdhl27/torneo" target="_blank"> Torneo/Codigo</a>
+                </small>
+              </p>
+              <p class="project-description">
+                Organizar los equipos de un torneo de fútbol de manera sencilla. Al colocar el marcador,
+                 el sistema genera la tabla de posiciones automáticamente.
+              </p>
+              <p class="project-code">
+                <img src="images/cshart.png" alt="C#" style="box-shadow: none;">
+              </p>
+            </div>
+          </article>
+          
+          <article class="project project-hidden">
+            <figure class="project-imageContainer">
+              <img class="project-image" width="268" src="images/varianza.png" alt="Proyecto Varianza">
+            </figure>
+            <div class="project-details">
+              <h3 class="project-title">Varianza</h3>
+              <p class="project-url">
+                <small>
+                  <strong>Puedes verlo en:</strong> 
+                   Sitio de escritorio
+                </small>
+              </p>
+              <p class="project-url">
+                <small>
+                  <strong>Código en:</strong>
+                  <a href="https://github.com/jdhl27/varianza" target="_blank"> Varianza/Codigo</a>
+                </small>
+              </p>
+              <p class="project-description">
+                la varianza o variancia de una variable aleatoria es una medida de dispersión definida
+                 como la esperanza del cuadrado de la desviación de dicha variable respecto a su media.
+              </p>
+              <p class="project-code">
+                <img src="images/cshart.png" alt="C#" style="box-shadow: none;">
+              </p>
+            </div>
           </article>
 
           <article class="project project-hidden">
-            <div class="project-details">
-              <h3 class="project-title">CLICKDOWN</h3>
-              <p class="project-url"><small><strong>Puedes verlo en:</strong> Pronto en la web</small></p>
-              <p class="project-description">Descarga la música de tus artistas favoritos de Rock con tan solo un click. Rápido, fácil y sencillo</p>
-            </div>
             <figure class="project-imageContainer">
-              <img class="project-image cubo-image" width="172" src="images/rock.png" alt="Proyecto Objects">
+              <img class="project-image" width="227" src="images/hospital.png" alt="Proyecto Triage">
             </figure>
+            <div class="project-details">
+              <h3 class="project-title">Triage</h3>
+              <p class="project-url">
+                <small>
+                  <strong>Puedes verlo en:</strong> 
+                   Sitio de escritorio
+                </small>
+              </p>
+              <p class="project-url">
+                <small>
+                  <strong>Código en:</strong>
+                  <a href="https://github.com/jdhl27/triage" target="_blank"> Triage/Codigo</a>
+                </small>
+              </p>
+                <p class="project-description">​
+                  Triage es el criterio para la clasificación de pacientes en el servicio de urgencias
+                  el cual es de obligatorio cumplimiento por parte de los prestadores de servicios
+                   de salud que tengan habilitado este servicio.
+                </p>
+              <p class="project-code">
+                <img src="images/py.png" alt="PY" style="box-shadow: none;">
+              </p>
+            </div>
           </article>
 
           <article class="project project-hidden">
-            <div class="project-details">
-              <h3 class="project-title">TRIAGE</h3>
-              <p class="project-url"><small><strong>Puedes verlo en:</strong> Pronto en la web</small></p>
-              <p class="project-description">​Triage es el criterio para la clasificación de pacientes en el servicio de urgencias el cual es de obligatorio cumplimiento por parte de los prestadores de servicios de salud que tengan habilitado este servicio.</p>
-            </div>
             <figure class="project-imageContainer">
-              <img class="project-image cubo-image" width="172" src="images/hospital.png" alt="Proyecto Objects">
+              <img class="project-image" width="227" src="images/binario.jpg" alt="Proyecto Arbol Binario">
             </figure>
+            <div class="project-details">
+              <h3 class="project-title">Árbol Binario</h3>
+              <p class="project-url">
+                <small>
+                  <strong>Puedes verlo en:</strong> 
+                   Sitio de escritorio
+                </small>
+              </p>
+              <p class="project-url">
+                <small>
+                  <strong>Código en:</strong>
+                  <a href="https://github.com/jdhl27/Arbol-Binario" target="_blank"> Árbol-Binario/Codigo</a>
+                </small>
+              </p>
+                <p class="project-description">​
+                  La aplicación muestra los nodos graficamente para que la comprención del concepto de árbol
+                  binaria sea un poco mas sencilla.
+                  Es una estructura de datos en la cual cada nodo puede tener un hijo izquierdo 
+                  y un hijo derecho.
+                   Si algún hijo tiene como referencia a null, es decir que no almacena ningún dato, 
+                   entonces este es llamado un nodo externo. En el caso contrario el hijo es llamado un nodo
+                    interno. 
+                </p>
+              <p class="project-code">
+                <img src="images/py.png" alt="PY" style="box-shadow: none;">
+              </p>
+            </div>
+          </article>
+
+          <article class="project project-hidden">
+            <figure class="project-imageContainer">
+              <img class="project-image" width="227" src="images/lista.png" alt="Proyecto Tabla de clientes">
+            </figure>
+            <div class="project-details">
+              <h3 class="project-title">Registro de clientes</h3>
+              <p class="project-url">
+                <small>
+                  <strong>Puedes verlo en:</strong> 
+                   Sitio de escritorio
+                </small>
+              </p>
+              <p class="project-url">
+                <small>
+                  <strong>Código en:</strong>
+                  <a href="https://github.com/jdhl27/CRUD-Python" target="_blank"> Clientes/Codigo</a>
+                </small>
+              </p>
+                <p class="project-description">​
+                  Crear, leer, actualizar y eliminar registros de clientes. El sistema muestra los registros 
+                  ordenados en una tabla.
+                </p>
+              <p class="project-code">
+                <img src="images/py.png" alt="PY" style="box-shadow: none;">
+              </p>
+            </div>
           </article>
         </div>
 
@@ -92,74 +260,17 @@
           <span class="projects-mas" id="projects-mas" onclick="moreAndLessProject()">Ver Más</span>
         </div>
       </section>
-
-      <section class="tools">
-        <div class="container">
-          <div class="container-tools-all">
-            <div class="tools-description">
-                <div class="tools-description-container">
-                  <div class="tools-description-container-img-title">
-                    <figure class="tools-description-container-img">
-                      <img class="tools-description-image" src="" alt="">
-                    </figure>
-                    <h1 class="tools-description-title">JavaS</h1>
-                  </div>
-                  <div class="progress-container">
-                      <div class="progress progress-js"></div>
-                  </div>
-                </div>
-
-                <div class="tools-description-container">
-                  <div class="tools-description-container-img-title">
-                    <figure class="tools-description-container-img">
-                      <img class="tools-description-image" src="" alt="">
-                    </figure>
-                    <h1 class="tools-description-title">CSS</h1>
-                  </div>
-                  <div class="progress-container">
-                      <div class="progress progress-css"></div>
-                  </div>
-                </div>
-            </div>
-            <div class="tools-image">
-              <figure class="tools-image-container">
-                  <img src="images/listaDevs.png" alt="">
-              </figure>
-            </div>
-            <div class="tools-description">
-              <div class="tools-description-container">
-                <div class="tools-description-container-img-title">
-                  <figure class="tools-description-container-img">
-                    <img class="tools-description-image" src="" alt="">
-                  </figure>
-                  <h1 class="tools-description-title">React</h1>
-                </div>
-                <div class="progress-container">
-                    <div class="progress progress-react"></div>
-                </div>
-              </div>
-
-              <div class="tools-description-container">
-                <div class="tools-description-container-img-title">
-                  <figure class="tools-description-container-img">
-                    <img class="tools-description-image" src="" alt="">
-                  </figure>
-                  <h1 class="tools-description-title">PHP</h1>
-                </div>
-                <div class="progress-container">
-                    <div class="progress progress-php"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- FRASE  -->
+      <section class="frase">
+        <span class="container-frase">
+          "El <span>software</span> es una gran combinación entre <span>arte</span> e <span>ingeniería.</span>" <span class="autor-frase">~ Bill Gates</span>
+        </span>
       </section>
-
-
-
+      <!-- TITULO MAS SOBRE MI -->
       <div class="container" id="quiensoy">
         <h2 class="event-list-title">Más sobre mí</h2>
       </div>
+      <!-- EVENTOS -->
       <section class="event-list">
         <div class="container">
           <article class="event">
@@ -211,23 +322,22 @@
           </article>
         </div>
       </section>
-
+      <!-- CONTACTO -->
       <section id="contacto" class="contact">
         <div class="container">
           <form class="form-email" action="#">
             <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Déjanos tu email">
+            <input type="text" placeholder="Déjame tu email">
             <button>Enviar</button>
           </form>
           <div class="social">
             <a href="https://twitter.com/jdhl27" target="_blank" class="social-link twitter"></a>
-            <a href="https://facebook.com/rexixtiendo" target="_blank" class="social-link facebook"></a>
             <a href="https://github.com/jdhl27" target="_blank" class="social-link github"></a>
             <a href="https://www.instagram.com/jdhl27/" target="_blank" class="social-link instagram"></a>
           </div>
         </div>
       </section>
-
+      <!-- FOOTER -->
       <footer class="footer">
         <div class="container">
           <div>

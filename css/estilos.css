@@ -1,18 +1,19 @@
 
+/* FUENTES */
+
 @font-face {
   font-family: Baron;
   src: url("fonts/Baron/Baron\ Neue.otf");
 }
 
-@font-face{
-  font-family: Teko;
-  src: url("fonts/Teko/Teko-Light.ttf");
-}
-
+/* GENERAL*/
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  cursor: default;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -20,21 +21,8 @@ h1, h2, h3, h4, h5, h6{
   font-weight: normal;
 }
 
-h1{
-  font-size: 40px;
-  line-height: 150%;
-  letter-spacing: -.2px;
-  color: white;
-  width: 54%;
-}
-
-
-h1 span{
-  color: #2cb4ba;
-}
-
 h2{
-  color: #2cb4ba;
+  color: #1d252c;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
@@ -46,16 +34,29 @@ figure{
   margin: 0;
 }
 
-.menu{
-  height: inherit;
-}
-
 ol, ul{
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* CONTIENE CADA SECCION */
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+/* NAVBAR */
+
+.menu{
+  height: inherit;
+}
 
 .header{
   background-color: #1d252c;
@@ -104,13 +105,16 @@ ol, ul{
 }
 
 .logo-title{
-
-  margin-right: 419px;
+  margin-right: 348px;
   margin-top: 42px;
   color: white;
   font-weight: 100;
   font-family: Baron;
+  cursor: default;
+  text-transform: none;
 }
+
+/* FRASE E IMAGEN */
 
 .hero{
   background-color: #1d252c;
@@ -118,12 +122,8 @@ ol, ul{
   justify-content: space-between;
   padding-bottom: 42px;
   padding-top: 42px;
-}
-
-.autor-frase{
-  font-size: 20px;
-  margin-left: 358px;
-  color: #299970;
+  border-radius: 0% 0% 100% 0%;
+  border-bottom: 10px solid #2cb4ba;
 }
 
 .hero img{
@@ -132,19 +132,42 @@ ol, ul{
   width: 287px;
   height: 287px;
   border: 1px solid #29849c;
-  box-shadow: 0px 0px 10px 2px #29849c;
+  box-shadow: 0px 0px 10px 2px #2cb4ba;
 }
+
+.fraseInicial{
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -.2px;
+  color: white;
+  width: 54%;
+  margin-left: 5vw;
+}
+
+.fraseInicial>span {
+  color: #2cb4ba;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.autor-frase{
+  font-size: 20px;
+  margin-left: 358px;
+  color: #299970 !important;
+}
+
+/* PORTAFOLIO */
 
 .portafolio{
   background-color: #ffffff;
   padding:  20px;
-  padding-bottom: 106px;
+  padding-bottom: 68px;
+  margin-top: 28px;
 }
 
 .project{
-  border: 1px solid #b9b9b9;
+  border: 1px solid #efefef;
   border-radius: 10px;
-  padding: 36px 2px;
+  padding: 52px 27px;
   background-color: white;
   display: flex;
   margin-top: 0;
@@ -169,17 +192,18 @@ ol, ul{
 }
 
 .project-description{
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .project strong{
   font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .project-title{
-  font-size: 30px;
+  font-size: 24px;
   margin: 16px 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .project-details{
@@ -189,85 +213,71 @@ ol, ul{
 
 .project-imageContainer{
   display: inline-block;
-  padding: 21px;
-  border: 1px solid #e4e4e4;
-  box-shadow: 0 0 5px 0 #ececec;
+  padding-right: 54px;
+  border-right: 1px solid #d4d4d4;
 }
 
+.project-url>small>a{
+  text-decoration: none;
+  color: #2cb4ba;
+}
 
-.tools{
-  padding-top: 8vw;
-  padding-bottom: 7vw;
+.project-url>small>a:hover{
+  text-decoration: none;
+  color: #1d252c;
+}
+
+.project-code{
+}
+
+.project-code>img{
+
+width: 8%;
+
+box-shadow: 0px 0px 5px 1px orange;
+}
+
+.projects-mas{
+  margin-left: 444px;
+}
+
+.projects-mas:hover{
+  background-color: #0c3638;
+  color: white;
+  border-color: #2c4748;
+  box-shadow: 0px 1px 10px 1px #0c363870;
+  transition: all 0.3s;
+}
+
+/* FRASE 2 */
+
+.frase{
   background-color: #1d252c;
+  padding: 138px 0;
+  box-shadow: 0px 0px 5px 1px #03A9F4;
+  background-image: url("../images/Hola Mundo.gif");
+  background-size: 1400px;
+  background-position-y: 13vw;
+  /* background-attachment: fixed; */
 }
 
-.container-tools-all{
-    
-  display: grid;
+.container-frase{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+  /* line-height: 150%; */
+  letter-spacing: -.2px;
+  color: white;
+  width: 48%;
   margin: 0 auto;
+  display: block;
 }
 
-.tools-description{
-  grid-row: 1;
-  width: 61%;
-  justify-self: center;
+.container-frase>span{
+  color: #2cb4ba;
+  text-shadow: 2px 2px 0px #000000;
 }
 
-.tools-description-container{
-  padding-bottom: 5vw;
-}
-
-.tools-description-container-img-title{
-  display: flex;
-}
-
-
-.tools-description-title{
-
-color: #ff8a00;
-
-margin: 0 auto;
-
-font-family: teko;
-}
-
-.tools-image{
-  grid-row: 1;
-  align-self: center;
-  justify-self: center;
-}
-
-
-.progress-container{
-
-  background: gray;
-  width: 100%;
-  border-radius: 18px;
-}
-
-.progress{
-    
-  background: #ff8a00; 
-  height: 7px;  
-  width: 50%;
-  border-radius: 18px;
-}
-
-.progress-js{
-  width: 70%;
-}
-
-.progress-css{
-    width: 80%;
-}
-
-.progress-react{
-
-}
-
-.progress-php{
-  width: 60%;
-}
+/* EVENTOS */
 
 .event-list{
   display: flex;
@@ -277,7 +287,7 @@ font-family: teko;
 
 .event-list-title{
   margin-left: 20px;
-  padding-top: 37px;
+  padding-top: 35px;
 }
 
 .event{
@@ -333,6 +343,8 @@ font-family: teko;
   transition: all 0.3s;
 }
 
+/* CONTACTO */
+
 .contact{
   background-color: #0c3638;
   color: white;
@@ -383,7 +395,6 @@ font-family: teko;
   color: white;
 }
 
-
 .social-link{
   display: inline-block;
   width: 50px;
@@ -393,7 +404,6 @@ font-family: teko;
 }
 
 .social-link:hover{
-
   filter: blur(1px);
   transform: scale(1.1);
 }
@@ -414,6 +424,8 @@ font-family: teko;
   background-image: url('../images/instagram.svg');
 }
 
+/* FOOTER */
+
 .footer{
   color: white;
   background-color: #1d252c;
@@ -428,26 +440,4 @@ font-family: teko;
 
 .footer span{
   color: wheat;
-}
-
-.container{
-  width: 1000px;
-  margin: 0 auto;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-  flex-wrap: inherit;
-}
-
-.projects-mas{
-  margin-left: 444px;
-}
-
-.projects-mas:hover{
-  background-color: #0c3638;
-  color: white;
-  border-color: #2c4748;
-  box-shadow: 0px 1px 10px 1px #0c363870;
-  transition: all 0.3s;
 }
