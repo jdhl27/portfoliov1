@@ -2,21 +2,25 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Juan David | Desarrollador</title>
     <link rel="icon" type="image/png" href="images/logoJuanD.png">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" 
           rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <meta name="viewport">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body ondragstart="return false">
       <!-- NAVBAR -->
       <header class="header">
         <div class="container">
-          <figure class="logo">
-            <img src="images/logoJuanD.png" height="50" alt="Logo de Juan">
-          </figure>
-          <h2 class="logo-title">Juan David</h1>
+          <div class="container-logo-titulo">
+            <figure class="logo">
+              <img src="images/logoJuanD.png" height="50" alt="Logo de Juan">
+            </figure>
+            <h2 class="logo-title">DEV</h1>
+          </div>
           <nav class="menu">
             <ul>
               <li>
@@ -27,9 +31,6 @@
               </li>
               <li>
                 <a class="link" href="#contacto">Trabajemos juntos</a>
-              </li>
-              <li>
-                <a class="link" href="#">Tips</a>
               </li>
             </ul>
           </nav>
@@ -43,7 +44,7 @@
             <span>no puedes</span> pintar, 
             <span>¡Pinta!</span> y esa voz se callará” <br> <span class="autor-frase">~ Van Gogh</span>
           </h1>
-          <img src="images/heroJD.jpg" alt="imagen principal del sitio">
+          <img src="images/foto.jpg" alt="imagen principal del sitio">
         </div>
       </section>
       <!-- PORTAFOLIO -->
@@ -196,7 +197,7 @@
 
           <article class="project project-hidden">
             <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/binario.jpg" alt="Proyecto Arbol Binario">
+              <img class="project-image" width="227" src="images/internet.png" alt="Proyecto Arbol Binario">
             </figure>
             <div class="project-details">
               <h3 class="project-title">Árbol Binario</h3>
@@ -279,9 +280,9 @@
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Música y pasatiempos...</h3>
-              <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
-              <spas class="event-url" onclick="moreAndLessEvent(0)">Ver Más</span>
+              <p class="event-description">Futbolero aficionado. Escucho punk rock y disfruto tomarme una cerveza.</p>
+              <!--  <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
+              <spas class="event-url" onclick="moreAndLessEvent(0)">Ver Más</span> -->
             </div>
           </article>
 
@@ -291,10 +292,9 @@
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Mi vida personal...</h3>
-              <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
-
-              <span class="event-url" onclick="moreAndLessEvent(1)">Ver Más</span>
+              <p class="event-description">Mi nombre es Juan David Hernández y soy de la ciudad de Medellín. Soy un desarrollador apasionado que jamás se detiene en el mundo del aprendizaje.</p>
+              <!-- <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
+              <span class="event-url" onclick="moreAndLessEvent(1)">Ver Más</span> -->
             </div>
           </article>
 
@@ -304,20 +304,17 @@
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Estudios...</h3>
-              <p class="event-description">Desde muy niño siempre me he inclinado por la tecnología, las matemáticas y la ciencia. Pertenecí a un grupo de Robótica en el colegio y asistía a eventos de innovación.</p>
-              <p class="event-description-hidden">
-                <strong>Mis Estudios:</strong>
+              <p class="event-description">
+
+                •	Ingeniería en Software (TdeA) En Proceso
                 <br>
-                <br>
-                &nbsp;&nbsp; •	Programación de Software
-                <br>
-                &nbsp;&nbsp; •	Ingeniería en Software
+                •	Técnica en Programación de Software (SENA)
                 <br>  
-                &nbsp;&nbsp; •	Desarrollo Front-end
+                •	Especialización en Desarrollo Front-end (Platzi)
                 <br>  
-                &nbsp;&nbsp; •	Cursos. Ver certificados <a href="https://platzi.com/@juan-david465/" target="_blank">aquí</a>
+                •	Cursos. Ver certificados <a href="https://platzi.com/@jdhl27" target="_blank">aquí</a>
               </p>
-              <span class="event-url"onclick="moreAndLessEvent(2)" >Ver Más</span>
+              
             </div>
           </article>
         </div>

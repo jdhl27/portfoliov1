@@ -6,10 +6,15 @@
   src: url("fonts/Baron/Baron\ Neue.otf");
 }
 
+@font-face {
+  font-family: font-system;
+  src: url("fonts/system/system.woff2");
+}
+
 /* GENERAL*/
 
 body{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: font-system,'Source Sans Pro', sans-serif;
   margin: 0;
   cursor: default;
   -moz-user-select: none;
@@ -94,9 +99,14 @@ ol, ul{
   color: #299970;
 }
 
+.container-logo-titulo{
+  
+display: flex;
+}
+
 .logo{
   margin: 0;
-  margin-top: 11px;
+  margin-top: 26px;
 }
 
 .logo img{
@@ -105,7 +115,7 @@ ol, ul{
 }
 
 .logo-title{
-  margin-right: 348px;
+  margin-right: 408px;
   margin-top: 42px;
   color: white;
   font-weight: 100;
@@ -121,14 +131,14 @@ ol, ul{
   display: flex;
   justify-content: space-between;
   padding-bottom: 42px;
-  padding-top: 42px;
+  padding-top: 129px;
   border-radius: 0% 0% 100% 0%;
   border-bottom: 10px solid #2cb4ba;
 }
 
 .hero img{
   object-fit: cover;
-  border-radius: 147px;
+  border-radius: 50%;
   width: 287px;
   height: 287px;
   border: 1px solid #29849c;
@@ -137,7 +147,7 @@ ol, ul{
 
 .fraseInicial{
   font-size: 40px;
-  line-height: 150%;
+  line-height: 156%;
   letter-spacing: -.2px;
   color: white;
   width: 54%;
@@ -196,7 +206,6 @@ ol, ul{
 }
 
 .project strong{
-  font-family: 'Fjalla One', sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -376,7 +385,7 @@ box-shadow: 0px 0px 5px 1px orange;
   width: 100px;
   margin-top: 10px;
   cursor: pointer;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: inherit;
   font-size: 14px;
 }
 
