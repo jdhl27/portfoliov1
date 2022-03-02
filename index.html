@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
   </head>
-  <body ondragstart="return false">
+  <body>
+    <h2 id="message-mobile">En este momento mi sitio solo está disponible en una computadora, pronto estará listo en móvil</h2>
+    <div id="main-cont">
       <!-- NAVBAR -->
-      <header class="header">
+      <header id="header" class="header">
         <div class="container">
           <div class="container-logo-titulo">
             <figure class="logo">
-              <img src="images/logoJuanD.png" height="50" alt="Logo de Juan">
+              <!-- <img src="images/logoJuanD.png" height="50" alt="Logo de Juan"> -->
             </figure>
-            <h2 class="logo-title">DEV</h1>
+            <!-- <h2 class="logo-title">DEV</h1> -->
           </div>
           <nav class="menu">
             <ul>
@@ -40,264 +42,305 @@
       <section class="hero">
         <div class="container">
           <h1 class="fraseInicial">
-            “Si escuchas una <span>voz</span> en tu interior que te dice que 
-            <span>no puedes</span> pintar, 
-            <span>¡Pinta!</span> y esa voz se callará” <br> <span class="autor-frase">~ Van Gogh</span>
+            Soy Juan, Desarrollador de aplicaciones móviles en <span>React Native</span>.
+            <br>
+            ¡Disfruto crear aplicaciones con JavaScript!
           </h1>
-          <img src="images/foto-personal.jpg" alt="imagen principal del sitio">
+          <div>
+            <div class="box-img"></div>
+            <img src="images/image0.jpeg" alt="imagen principal del sitio">
+          </div>
         </div>
       </section>
       <!-- PORTAFOLIO -->
       <section id="portafolio" class="portafolio">
         <div class="container">
           <h2>Portafolio (proyectos de código abierto)</h2>
-          <article class="project">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/mappbus.png" alt="Proyecto MappBus">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">MappBus</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                  Pronto en la web
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/MappBus" target="_blank"> MappBus/Codigo</a>
-                </small>
-              </p>
-              <p class="project-description">
-                Ofrecer a los usuarios rápida información, comodidad y orientación a la hora de utilizar 
-                el transporte público de buses. el acceso a lugares en específico de forma efectiva de acuerdo
-                con la necesidad del cliente.
-              </p>
-              <p class="project-code">
-                <img src="images/js.png" alt="JS">
-              </p>
-            </div>
-          </article>
-
-          <article class="project">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/simon.svg" alt="Proyecto Simón">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">Juego Simón</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                  <a href="https://jdhl27.github.io/simon" target="_blank"> www.simon.com</a>
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/simon" target="_blank"> Simon/Codigo</a>
-                </small>
-              </p>
-              <p class="project-description">
-                El juego de forma aleatoria va iluminando los cuadrantes de colores, 
-                y a la vez que se ilumina cada cuadrante emite un sonido propio. 
-                Después de esperar, el usuario debe ir introduciendo la secuencia mostrada en el
-                 orden correcto, ayudándose de su memoria visual y sonora.
-              </p>
-              <p class="project-code">
-                <img src="images/js.png" alt="JS">
-              </p>
-            </div>
-          </article>
-
-          <article class="project">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/planificacion.png" alt="Proyecto Simón">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">Algoritmo Round Robin</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                  <a href="https://jdhl27.github.io/Round_Robin/" target="_blank"> www.roundrobin.com</a>
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/Round_Robin" target="_blank"> Round Robin/Codigo</a>
-                </small>
-              </p>
-              <p class="project-description">
-                Es un método para seleccionar todos los abstractos en un grupo de manera equitativa y en un orden racional, 
-                normalmente comenzando por el primer elemento de la lista hasta llegar al último y empezando de nuevo desde el 
-                primer elemento. 
-                En operaciones computacionales, un método para ejecutar diferentes procesos de manera concurrente, 
-                para la utilización equitativa de los recursos del equipo, es limitando cada proceso a un pequeño período (quantum),
-                 y luego suspendiendo este proceso para dar oportunidad a otro proceso y así sucesivamente.
-              </p>
-              <p class="project-code">
-                <img src="images/js.png" alt="JS">
-              </p>
-            </div>
-          </article>
-
-          <article class="project project-hidden">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/uniforme.png" alt="Proyecto Torneo">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">Torneo</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                   Sitio de escritorio
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/torneo" target="_blank"> Torneo/Codigo</a>
-                </small>
-              </p>
-              <p class="project-description">
-                Organizar los equipos de un torneo de fútbol de manera sencilla. Al colocar el marcador,
-                 el sistema genera la tabla de posiciones automáticamente.
-              </p>
-              <p class="project-code">
-                <img src="images/cshart.png" alt="C#" style="box-shadow: none;">
-              </p>
-            </div>
-          </article>
-          
-          <article class="project project-hidden">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="268" src="images/varianza.png" alt="Proyecto Varianza">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">Varianza</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                   Sitio de escritorio
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/varianza" target="_blank"> Varianza/Codigo</a>
-                </small>
-              </p>
-              <p class="project-description">
-                la varianza o variancia de una variable aleatoria es una medida de dispersión definida
-                 como la esperanza del cuadrado de la desviación de dicha variable respecto a su media.
-              </p>
-              <p class="project-code">
-                <img src="images/cshart.png" alt="C#" style="box-shadow: none;">
-              </p>
-            </div>
-          </article>
-
-          <article class="project project-hidden">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/hospital.png" alt="Proyecto Triage">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">Triage</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                   Sitio de escritorio
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/triage" target="_blank"> Triage/Codigo</a>
-                </small>
-              </p>
-                <p class="project-description">​
-                  Triage es el criterio para la clasificación de pacientes en el servicio de urgencias
-                  el cual es de obligatorio cumplimiento por parte de los prestadores de servicios
-                   de salud que tengan habilitado este servicio.
+          <p>
+            ¡Hola! Estos son algunos de los pequeños proyectos que hice para practicar, en cada repositorio
+            se puede encontrar la respectiva descripción. Las aplicaciones móviles que he desarrollado son
+            para empresas privadas pero te puedo contar un poco sobre su objetivo: Aplicaciones para tratar y diagnosticar 
+            el estrés posguerra en USA; Buscar profesionales mediante los hobbies de cada persona; 
+            Reincorporación laboral en personas con conflictos. 
+            Con React Native he logrado crear aplicaciones para Android/iOS
+          </p>
+          <div class="container-proyectos">
+            <article class="project">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/mappbus.png" alt="Proyecto MappBus">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">MappBus</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo en:</strong> 
+                    Pronto en la web
+                  </small>
                 </p>
-              <p class="project-code">
-                <img src="images/py.png" alt="PY" style="box-shadow: none;">
-              </p>
-            </div>
-          </article>
-
-          <article class="project project-hidden">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/internet.png" alt="Proyecto Arbol Binario">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">Árbol Binario</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                   Sitio de escritorio
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/Arbol-Binario" target="_blank"> Árbol-Binario/Codigo</a>
-                </small>
-              </p>
-                <p class="project-description">​
-                  La aplicación muestra los nodos graficamente para que la comprención del concepto de árbol
-                  binaria sea un poco mas sencilla.
-                  Es una estructura de datos en la cual cada nodo puede tener un hijo izquierdo 
-                  y un hijo derecho.
-                   Si algún hijo tiene como referencia a null, es decir que no almacena ningún dato, 
-                   entonces este es llamado un nodo externo. En el caso contrario el hijo es llamado un nodo
-                    interno. 
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/MappBus" target="_blank"> MappBus/Codigo</a>
+                  </small>
                 </p>
-              <p class="project-code">
-                <img src="images/py.png" alt="PY" style="box-shadow: none;">
-              </p>
-            </div>
-          </article>
-
-          <article class="project project-hidden">
-            <figure class="project-imageContainer">
-              <img class="project-image" width="227" src="images/lista.png" alt="Proyecto Tabla de clientes">
-            </figure>
-            <div class="project-details">
-              <h3 class="project-title">Registro de clientes</h3>
-              <p class="project-url">
-                <small>
-                  <strong>Puedes verlo en:</strong> 
-                   Sitio de escritorio
-                </small>
-              </p>
-              <p class="project-url">
-                <small>
-                  <strong>Código en:</strong>
-                  <a href="https://github.com/jdhl27/CRUD-Python" target="_blank"> Clientes/Codigo</a>
-                </small>
-              </p>
-                <p class="project-description">​
-                  Crear, leer, actualizar y eliminar registros de clientes. El sistema muestra los registros 
-                  ordenados en una tabla.
+                <p class="project-description">
+                  Ofrecer a los usuarios rápida información, comodidad y orientación a la hora de utilizar 
+                  el transporte público de buses. el acceso a lugares en específico de forma efectiva de acuerdo
+                  con la necesidad del cliente.
                 </p>
-              <p class="project-code">
-                <img src="images/py.png" alt="PY" style="box-shadow: none;">
-              </p>
-            </div>
-          </article>
-        </div>
+                <p class="project-code">
+                  <img src="images/js.png" alt="JS">
+                </p>
+              </div>
+            </article>
 
-        <div class="container">
-          <span class="projects-mas" id="projects-mas" onclick="moreAndLessProject()">Ver Más</span>
+            <article class="project">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/simon.svg" alt="Proyecto Simón">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Juego Simón</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo </strong> 
+                    <a href="https://jdhl27.github.io/simon" target="_blank"> Aquí</a>
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/simon" target="_blank"> Simon/Codigo</a>
+                  </small>
+                </p>
+                <p class="project-description">
+                  El juego de forma aleatoria va iluminando los cuadrantes de colores, 
+                  y a la vez que se ilumina cada cuadrante emite un sonido propio. 
+                  Después de esperar, el usuario debe ir introduciendo la secuencia mostrada en el
+                  orden correcto, ayudándose de su memoria visual y sonora.
+                </p>
+                <p class="project-code">
+                  <img src="images/js.png" alt="JS">
+                </p>
+              </div>
+            </article>
+
+            <article class="project">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/propuesta.png" alt="Proyecto Propuesta">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Propuestas</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo </strong> 
+                    <a href="https://jdhl27.github.io/propuesta" target="_blank">Aquí</a>
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/propuesta" target="_blank"> Propuestas/Codigo</a>
+                  </small>
+                </p>
+                <p class="project-description">
+                  ¿Te gusta presentar invitaciones o propuestas de manera divertida? Esta es tu solución
+                </p>
+                <p class="project-code">
+                  <img src="images/js.png" alt="JS">
+                </p>
+              </div>
+            </article>
+
+            <article class="project">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/planificacion.png" alt="Proyecto Simón">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Algoritmo Round Robin</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo</strong> 
+                    <a href="https://jdhl27.github.io/Round_Robin/" target="_blank"> Aquí</a>
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/Round_Robin" target="_blank"> Round Robin/Codigo</a>
+                  </small>
+                </p>
+                <p class="project-description">
+                  En operaciones computacionales, un método para ejecutar diferentes procesos de manera concurrente, 
+                  para la utilización equitativa de los recursos del equipo, es limitando cada proceso a un pequeño período (quantum),
+                  y luego suspendiendo este proceso para dar oportunidad a otro proceso y así sucesivamente.
+                </p>
+                <p class="project-code">
+                  <img src="images/js.png" alt="JS">
+                </p>
+              </div>
+            </article>
+
+            <article class="project ">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/uniforme.png" alt="Proyecto Torneo">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Torneo</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo en:</strong> 
+                    Sitio de escritorio
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/torneo" target="_blank"> Torneo/Codigo</a>
+                  </small>
+                </p>
+                <p class="project-description">
+                  Organizar los equipos de un torneo de fútbol de manera sencilla. Al colocar el marcador,
+                  el sistema genera la tabla de posiciones automáticamente.
+                </p>
+                <p class="project-code">
+                  <img src="images/cshart.png" alt="C#" style="box-shadow: none;">
+                </p>
+              </div>
+            </article>
+            
+            <article class="project ">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/varianza.png" alt="Proyecto Varianza">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Varianza</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo en:</strong> 
+                    Sitio de escritorio
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/varianza" target="_blank"> Varianza/Codigo</a>
+                  </small>
+                </p>
+                <p class="project-description">
+                  la varianza o variancia de una variable aleatoria es una medida de dispersión definida
+                  como la esperanza del cuadrado de la desviación de dicha variable respecto a su media.
+                </p>
+                <p class="project-code">
+                  <img src="images/cshart.png" alt="C#" style="box-shadow: none;">
+                </p>
+              </div>
+            </article>
+
+            <article class="project ">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/hospital.png" alt="Proyecto Triage">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Triage</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo</strong> 
+                    <a href="https://jdhl27.github.io/Portafolio/images/triage.gif" target="_blank">
+                      Aquí (Sitio de escritorio)
+                    </a>
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/triage" target="_blank"> Triage/Codigo</a>
+                  </small>
+                </p>
+                  <p class="project-description">​
+                    Triage es el criterio para la clasificación de pacientes en el servicio de urgencias
+                    el cual es de obligatorio cumplimiento por parte de los prestadores de servicios
+                    de salud que tengan habilitado este servicio.
+                  </p>
+                <p class="project-code">
+                  <img src="images/py.png" alt="PY" style="box-shadow: none;">
+                </p>
+              </div>
+            </article>
+
+            <article class="project ">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/internet.png" alt="Proyecto Arbol Binario">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Árbol Binario</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo en:</strong> 
+                    Sitio de escritorio
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/Arbol-Binario" target="_blank"> Árbol-Binario/Codigo</a>
+                  </small>
+                </p>
+                  <p class="project-description">​
+                    La aplicación muestra los nodos graficamente para que la comprensión del concepto de árbol
+                    binaria sea un poco mas sencilla.
+                    Es una estructura de datos en la cual cada nodo puede tener un hijo izquierdo 
+                    y un hijo derecho.
+                    Si algún hijo tiene como referencia a null, es decir que no almacena ningún dato, 
+                    entonces este es llamado un nodo externo. En el caso contrario el hijo es llamado un nodo
+                      interno. 
+                  </p>
+                <p class="project-code">
+                  <img src="images/py.png" alt="PY" style="box-shadow: none;">
+                </p>
+              </div>
+            </article>
+
+            <article class="project ">
+              <figure class="project-imageContainer">
+                <img class="project-image" src="images/lista.png" alt="Proyecto Tabla de clientes">
+              </figure>
+              <div class="project-details">
+                <h3 class="project-title">Registro de clientes</h3>
+                <p class="project-url">
+                  <small>
+                    <strong>Puedes verlo en:</strong> 
+                    Sitio de escritorio
+                  </small>
+                </p>
+                <p class="project-url">
+                  <small>
+                    <strong>Código en:</strong>
+                    <a href="https://github.com/jdhl27/CRUD-Python" target="_blank"> Clientes/Codigo</a>
+                  </small>
+                </p>
+                  <p class="project-description">​
+                    Crear, leer, actualizar y eliminar registros de clientes. El sistema muestra los registros 
+                    ordenados en una tabla.
+                  </p>
+                <p class="project-code">
+                  <img src="images/py.png" alt="PY" style="box-shadow: none;">
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <!-- FRASE  -->
       <section class="frase">
-        <span class="container-frase">
-          "El <span>software</span> es una gran combinación entre <span>arte</span> e <span>ingeniería.</span>" <span class="autor-frase">~ Bill Gates</span>
-        </span>
+        <h1 class="fraseFinal">
+          Si escuchas una voz en tu interior
+          <br>
+          que te dice que no puedes pintar, 
+          <br>
+          <span>¡PINTA!</span> y esa voz se callará
+          <br>
+          <span class="autor">Van Gogh</span>
+        </h1>
       </section>
       <!-- TITULO MAS SOBRE MI -->
       <div class="container" id="quiensoy">
@@ -308,27 +351,26 @@
         <div class="container">
           <article class="event">
             <figure class="event-imageContainer">
-              <img class="event-image" src="images/2min.png" width="500" alt="">
+              <img class="event-image" src="images/rn.jpg" width="500" alt="">
             </figure>
             <div class="event-detail">
-              <h3 class="event-title">Música y pasatiempos...</h3>
-              <p class="event-description">Futbolero aficionado. Escucho punk rock y disfruto tomarme una cerveza.</p>
-              <!--  <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
-              <spas class="event-url" onclick="moreAndLessEvent(0)">Ver Más</span> -->
+              <h3 class="event-title">Experiencia...</h3>
+              <p class="event-description">
+                Me desempeño como desarrollador de aplicaciones móviles con React Native por más de un año en la empresa Alternova. He trabajado con tecnologias para el frontend cumpliendo los estandares y requisitos de los proyectos.
+                Me encanta JavaScript y su poder que tiene en la programación.
+              </p>
             </div>
           </article>
 
-          <article class="event">
+          <!-- <article class="event">
             <figure class="event-imageContainer">
               <img class="event-image" src="images/ateneajuan.jpeg" width="500" alt="">
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Mi vida personal...</h3>
               <p class="event-description">Mi nombre es Juan David y soy de la ciudad de Medellín. Soy un desarrollador apasionado que jamás se detiene en el mundo del aprendizaje.</p>
-              <!-- <p class="event-description-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad, provident esse laudantium consequatur quia aperiam dicta incidunt delectus fuga vitae corrupti, repellendus eum sunt nobis soluta maiores fugiat vero!</p>
-              <span class="event-url" onclick="moreAndLessEvent(1)">Ver Más</span> -->
             </div>
-          </article>
+          </article> -->
 
           <article class="event">
             <figure class="event-imageContainer">
@@ -342,8 +384,6 @@
                 <br>
                 •	Técnica en Programación de Software (SENA)
                 <br>  
-                •	Especialización en Desarrollo Front-end (Platzi)
-                <br>  
                 •	Cursos. Ver certificados <a href="https://platzi.com/@jdhl27" target="_blank">aquí</a>
               </p>
               
@@ -354,26 +394,30 @@
       <!-- CONTACTO -->
       <section id="contacto" class="contact">
         <div class="container">
-          <form class="form-email" action="#">
+          <form class="form-email">
             <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Déjame tu email">
-            <button>Enviar</button>
+            <input id="email-user" type="text" placeholder="Déjame tu email" required>
+            <button type="submit" onclick="sendEmail(event)">Enviar</button>
           </form>
           <div class="social">
-            <a href="https://twitter.com/jdhl27" target="_blank" class="social-link twitter"></a>
             <a href="https://github.com/jdhl27" target="_blank" class="social-link github"></a>
-            <a href="https://www.instagram.com/jdhl27/" target="_blank" class="social-link instagram"></a>
+            <a href="https://www.linkedin.com/in/jdhl27/" target="_blank" class="social-link instagram"></a>
           </div>
         </div>
       </section>
       <!-- FOOTER -->
       <footer class="footer">
         <div class="container">
-          <div>
-            <p>Desarrollado por <span>@Juan</span> ~ De <img src="images/col.png" alt=""> para el mundo ~</p>
+          <div style="display: flex;">
+            <!-- <p>Desarrollado por <span>@Juan</span> ~ De <img src="images/col.png" alt=""> para el mundo ~</p> -->
+            <p id="year"></p>&nbsp;
+            <p> - Iconos creados por <a href="https://www.flaticon.es/iconos-gratis/valor" target="_blank" rel="noopener noreferrer">Freepik - Flaticon</a></p>
           </div>
         </div>
       </footer>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
       <script src="home.js"></script>
+    </div>
   </body>
 </html>

@@ -129,7 +129,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 42px;
-    padding-top: 129px;
+    padding-top: 75px;
     border-radius: 0% 0% 100% 0%;
     border-bottom: 10px solid #2cb4ba;
   }
@@ -596,7 +596,7 @@
     background-color: #1d252c;
     display: block;
     padding-bottom: 42px;
-    padding-top: 207px;
+    padding-top: 75px;
     border-radius: 0;
     border-bottom: 10px solid #2cb4ba;
   }
